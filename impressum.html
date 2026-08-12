@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum – AGATEX Cleaning Solutions</title>
+  <meta name="description" content="Impressum der AGATEX Feinchemie GmbH gemäß § 5 ECG.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:  #0D8E52;
+      --blue:   #1A3257;
+      --muted:  #546e7a;
+      --bg2:    #f4f8f6;
+      --border: rgba(26,50,87,0.12);
+      --ease:   0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: var(--blue); line-height: 1.6; }
+    h1,h2,h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--blue); }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border); padding: 14px 0;
+      box-shadow: 0 2px 20px rgba(26,50,87,0.08);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo img { height: 36px; width: auto; }
+    .logo-text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; color: var(--blue); }
+    .logo-text span { color: var(--green); }
+    .nav-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .88rem; font-weight: 500; color: var(--muted);
+      transition: color var(--ease);
+    }
+    .nav-back:hover { color: var(--blue); }
+    .nav-back svg { transform: rotate(180deg); }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      padding: 120px 0 60px;
+      background: var(--bg2);
+      border-bottom: 1px solid rgba(13,142,82,0.15);
+    }
+    .sec-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .78rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: .12em; color: var(--green); margin-bottom: 14px;
+    }
+    .sec-label::before { content: ''; display: block; width: 20px; height: 2px; background: var(--green); }
+
+    /* ── CONTENT ── */
+    .content { padding: 60px 0 100px; }
+    .cards { display: flex; flex-direction: column; gap: 20px; }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 2px 14px rgba(26,50,87,0.08);
+    }
+    .card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem; font-weight: 700; color: var(--blue);
+      padding-bottom: 14px; margin-bottom: 18px;
+      border-bottom: 2px solid rgba(13,142,82,0.2);
+    }
+    .info-row {
+      display: flex; gap: 16px; padding: 10px 0;
+      border-bottom: 1px solid rgba(26,50,87,0.06);
+      font-size: .875rem;
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-label { color: var(--muted); min-width: 200px; flex-shrink: 0; }
+    .info-value { color: var(--blue); font-weight: 500; }
+    .info-value a { color: var(--green); }
+    .info-value a:hover { text-decoration: underline; }
+
+    .member-list { display: flex; flex-direction: column; gap: 10px; padding-top: 4px; }
+    .member-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 10px 14px;
+      background: rgba(13,142,82,0.04);
+      border: 1px solid rgba(13,142,82,0.12);
+      border-radius: 8px;
+      font-size: .875rem;
+    }
+    .member-abbr {
+      font-size: .7rem; font-weight: 700; padding: 2px 9px;
+      border-radius: 100px; background: rgba(13,142,82,0.10);
+      border: 1px solid rgba(13,142,82,0.2); color: var(--green);
+      flex-shrink: 0; white-space: nowrap;
+    }
+    .member-name { color: var(--muted); }
+
+    .prose p { font-size: .875rem; color: var(--muted); line-height: 1.75; }
+    .prose p + p { margin-top: 14px; }
+    .prose h3 { font-size: .875rem; color: var(--blue); margin-bottom: 6px; margin-top: 18px; }
+
+    .cta-box {
+      background: linear-gradient(135deg, rgba(13,142,82,0.06), rgba(26,50,87,0.06));
+      border: 1px solid rgba(13,142,82,0.2);
+      border-radius: 16px; padding: 28px;
+      display: flex; gap: 20px; align-items: flex-start;
+    }
+    .cta-icon {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 18px;
+    }
+    .cta-title { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: .95rem; color: var(--blue); margin-bottom: 6px; }
+    .cta-text { font-size: .875rem; color: var(--muted); line-height: 1.65; margin-bottom: 10px; }
+    .cta-link { display: inline-flex; align-items: center; gap: 6px; font-size: .875rem; font-weight: 600; color: var(--green); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--blue); color: #fff; padding: 36px 0; margin-top: 0; }
+    .footer-bottom {
+      max-width: 860px; margin: 0 auto; padding: 0 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 14px;
+      font-size: .78rem; color: rgba(255,255,255,.5);
+    }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { color: rgba(255,255,255,.5); transition: color var(--ease); }
+    .footer-links a:hover { color: rgba(255,255,255,.8); }
+    .footer-links a.active { color: rgba(255,255,255,.8); }
+
+    @media (max-width: 600px) {
+      .info-row { flex-direction: column; gap: 4px; }
+      .info-label { min-width: unset; }
+    }
+  </style>
+  <script defer src="analytics.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="Logo_AGATEX.svg" alt="AGATEX Cleaning Solutions">
+      <span class="logo-text"><span>AGATEX</span> Cleaning Solutions</span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      Zurück zur Website
+    </a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <div class="sec-label">Rechtliches</div>
+    <h1 style="font-size: clamp(2rem,4vw,3rem); font-weight: 800; letter-spacing: -.03em; margin-bottom: 12px;">Impressum</h1>
+    <p style="font-size: .9rem; color: var(--muted); line-height: 1.7;">
+      Offenlegungspflicht gemäß § 5 ECG (E-Commerce-Gesetz) und § 25 MedienG.
+    </p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<main class="content">
+  <div class="container">
+    <div class="cards">
+
+      <!-- Unternehmensangaben -->
+      <div class="card">
+        <div class="card-title">Unternehmensangaben</div>
+        <div class="info-row"><span class="info-label">Firma</span><span class="info-value">AGATEX Feinchemie GmbH</span></div>
+        <div class="info-row"><span class="info-label">Marke</span><span class="info-value">AGATEX Cleaning Solutions – professionelle Reinigungslösungen für Industrie &amp; Gewerbe (eine Marke der AGATEX Feinchemie GmbH)</span></div>
+        <div class="info-row"><span class="info-label">Anschrift</span><span class="info-value">Aichham 11, A–4650 Lambach/Edt, Österreich</span></div>
+        <div class="info-row"><span class="info-label">Telefon</span><span class="info-value"><a href="tel:+437245323410">+43 (7245) 32341-0</a></span></div>
+        <div class="info-row"><span class="info-label">Fax</span><span class="info-value">+43 (7245) 32 341–8</span></div>
+        <div class="info-row"><span class="info-label">E-Mail</span><span class="info-value"><a href="mailto:office@agatex.at">office@agatex.at</a></span></div>
+        <div class="info-row"><span class="info-label">Website</span><span class="info-value"><a href="https://www.agatex.at" target="_blank" rel="noopener">www.agatex.at</a></span></div>
+      </div>
+
+      <!-- Registerdaten -->
+      <div class="card">
+        <div class="card-title">Registerdaten</div>
+        <div class="info-row"><span class="info-label">Rechtsform</span><span class="info-value">Gesellschaft mit beschränkter Haftung (GmbH)</span></div>
+        <div class="info-row"><span class="info-label">Firmenbuchnummer</span><span class="info-value">FN 151462p</span></div>
+        <div class="info-row"><span class="info-label">Firmenbuchgericht</span><span class="info-value">Landesgericht Wels</span></div>
+        <div class="info-row"><span class="info-label">UID-Nummer</span><span class="info-value">ATU 41387806</span></div>
+        <div class="info-row"><span class="info-label">Gerichtsstand</span><span class="info-value">Wels</span></div>
+        <div class="info-row"><span class="info-label">Bankverbindung</span><span class="info-value">Oberbank / Bank Austria</span></div>
+      </div>
+
+      <!-- Geschäftsführung -->
+      <div class="card">
+        <div class="card-title">Geschäftsführung</div>
+        <div class="info-row"><span class="info-label">Geschäftsführer</span><span class="info-value">Mag. Georg Bauer</span></div>
+        <div class="info-row"><span class="info-label"></span><span class="info-value">Nikolaus Bauer-Harnoncourt</span></div>
+      </div>
+
+      <!-- Mitgliedschaften -->
+      <div class="card">
+        <div class="card-title">Mitgliedschaften &amp; Verbände</div>
+        <div class="member-list">
+          <div class="member-item"><span class="member-abbr">IV</span><span class="member-name">Industriellenvereinigung</span></div>
+          <div class="member-item"><span class="member-abbr">FCIO</span><span class="member-name">Fachverband der Chemischen Industrie Österreichs</span></div>
+        </div>
+      </div>
+
+      <!-- Haftungsausschluss -->
+      <div class="card prose">
+        <div class="card-title">Haftungsausschluss</div>
+        <h3>Inhalt der Website</h3>
+        <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernimmt AGATEX Feinchemie GmbH jedoch keine Gewähr. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 ECG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+        <h3>Externe Links</h3>
+        <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p>
+        <h3>Urheberrecht</h3>
+        <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem österreichischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der AGATEX Feinchemie GmbH.</p>
+      </div>
+
+      <!-- Kontakt -->
+      <div class="cta-box">
+        <div class="cta-icon">✉️</div>
+        <div>
+          <div class="cta-title">Fragen zum Impressum?</div>
+          <p class="cta-text">Bei Fragen oder Anmerkungen wenden Sie sich bitte direkt an uns.</p>
+          <a href="mailto:office@agatex.at" class="cta-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            office@agatex.at
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <p>© 2026 AGATEX Feinchemie GmbH · Alle Rechte vorbehalten</p>
+    <div class="footer-links">
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html" class="active">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

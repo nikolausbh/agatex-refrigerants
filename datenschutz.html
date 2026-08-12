@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung – AGATEX Cleaning Solutions</title>
+  <meta name="description" content="Datenschutzerklärung der AGATEX Feinchemie GmbH gemäß DSGVO.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:  #0D8E52;
+      --blue:   #1A3257;
+      --muted:  #546e7a;
+      --bg2:    #f4f8f6;
+      --border: rgba(26,50,87,0.12);
+      --ease:   0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: var(--blue); line-height: 1.6; }
+    h1,h2,h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--blue); }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border); padding: 14px 0;
+      box-shadow: 0 2px 20px rgba(26,50,87,0.08);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo img { height: 36px; width: auto; }
+    .logo-text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; color: var(--blue); }
+    .logo-text span { color: var(--green); }
+    .nav-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .88rem; font-weight: 500; color: var(--muted);
+      transition: color var(--ease);
+    }
+    .nav-back:hover { color: var(--blue); }
+    .nav-back svg { transform: rotate(180deg); }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      padding: 120px 0 60px;
+      background: var(--bg2);
+      border-bottom: 1px solid rgba(13,142,82,0.15);
+    }
+    .sec-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .78rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: .12em; color: var(--green); margin-bottom: 14px;
+    }
+    .sec-label::before { content: ''; display: block; width: 20px; height: 2px; background: var(--green); }
+
+    /* ── CONTENT ── */
+    .content { padding: 60px 0 100px; }
+    .cards { display: flex; flex-direction: column; gap: 20px; }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px; padding: 32px;
+      box-shadow: 0 2px 14px rgba(26,50,87,0.08);
+    }
+    .card-header {
+      display: flex; align-items: center; gap: 14px;
+      padding-bottom: 14px; margin-bottom: 20px;
+      border-bottom: 2px solid rgba(13,142,82,0.2);
+    }
+    .card-icon {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 16px;
+    }
+    .card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem; font-weight: 700; color: var(--blue);
+    }
+
+    .prose p { font-size: .875rem; color: var(--muted); line-height: 1.75; }
+    .prose p + p { margin-top: 12px; }
+
+    .data-block {
+      padding: 16px; margin: 14px 0;
+      background: rgba(26,50,87,0.03);
+      border: 1px solid rgba(26,50,87,0.08);
+      border-radius: 10px;
+    }
+    .data-block-title { font-family: 'Space Grotesk', sans-serif; font-size: .875rem; font-weight: 600; color: var(--blue); margin-bottom: 8px; }
+    .data-block p { font-size: .875rem; color: var(--muted); line-height: 1.7; margin-bottom: 6px; }
+    .data-block p:last-child { margin-bottom: 0; }
+    .data-basis { font-size: .8rem; color: var(--green); font-weight: 500; }
+    .data-duration { font-size: .8rem; color: var(--muted); }
+
+    .info-note {
+      background: rgba(13,142,82,0.05);
+      border: 1px solid rgba(13,142,82,0.15);
+      border-radius: 10px; padding: 14px 18px;
+      margin-top: 14px; font-size: .875rem; color: var(--muted); line-height: 1.7;
+    }
+
+    .right-item { padding: 12px 0; border-bottom: 1px solid rgba(26,50,87,0.06); }
+    .right-item:last-child { border-bottom: none; }
+    .right-title { font-family: 'Space Grotesk', sans-serif; font-size: .875rem; font-weight: 600; color: var(--blue); margin-bottom: 4px; }
+    .right-desc { font-size: .875rem; color: var(--muted); line-height: 1.7; }
+
+    .cta-box {
+      background: linear-gradient(135deg, rgba(13,142,82,0.06), rgba(26,50,87,0.06));
+      border: 1px solid rgba(13,142,82,0.2);
+      border-radius: 16px; padding: 28px;
+      display: flex; gap: 20px; align-items: flex-start;
+    }
+    .cta-icon {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 18px;
+    }
+    .cta-title { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: .95rem; color: var(--blue); margin-bottom: 6px; }
+    .cta-text { font-size: .875rem; color: var(--muted); line-height: 1.65; margin-bottom: 10px; }
+    .cta-link { display: inline-flex; align-items: center; gap: 6px; font-size: .875rem; font-weight: 600; color: var(--green); }
+    .cta-addr { font-size: .82rem; color: var(--muted); margin-top: 8px; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--blue); color: #fff; padding: 36px 0; }
+    .footer-bottom {
+      max-width: 860px; margin: 0 auto; padding: 0 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 14px;
+      font-size: .78rem; color: rgba(255,255,255,.5);
+    }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { color: rgba(255,255,255,.5); transition: color var(--ease); }
+    .footer-links a:hover { color: rgba(255,255,255,.8); }
+    .footer-links a.active { color: rgba(255,255,255,.8); }
+
+    @media (max-width: 600px) {
+      .card-header { flex-wrap: wrap; }
+    }
+  </style>
+  <script defer src="analytics.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="Logo_AGATEX.svg" alt="AGATEX Cleaning Solutions">
+      <span class="logo-text"><span>AGATEX</span> Cleaning Solutions</span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      Zurück zur Website
+    </a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <div class="sec-label">Rechtliches</div>
+    <h1 style="font-size: clamp(2rem,4vw,3rem); font-weight: 800; letter-spacing: -.03em; margin-bottom: 12px;">Datenschutzerklärung</h1>
+    <p style="font-size: .9rem; color: var(--muted); line-height: 1.7;">
+      Informationen gemäß Art. 13 &amp; 14 DSGVO (Datenschutz-Grundverordnung). Stand: Juli 2026.
+    </p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<main class="content">
+  <div class="container">
+    <div class="cards">
+
+      <!-- Verantwortlicher -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">🏢</div>
+          <div class="card-title">Verantwortlicher (Art. 4 Nr. 7 DSGVO)</div>
+        </div>
+        <p class="prose" style="font-size:.875rem; color:var(--muted); line-height:1.75; margin-bottom:14px;">Verantwortlicher für die Datenverarbeitung auf dieser Website ist:</p>
+        <div class="info-note">
+          <strong style="color:var(--blue); font-family:'Space Grotesk',sans-serif;">AGATEX Feinchemie GmbH</strong><br>
+          Aichham 11, A–4650 Lambach/Edt, Österreich<br>
+          Telefon: <a href="tel:+437245323410" style="color:var(--green);">+43 (7245) 32341-0</a><br>
+          E-Mail: <a href="mailto:office@agatex.at" style="color:var(--green);">office@agatex.at</a>
+        </div>
+      </div>
+
+      <!-- Welche Daten -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">📋</div>
+          <div class="card-title">Welche Daten wir verarbeiten</div>
+        </div>
+        <p style="font-size:.875rem; color:var(--muted); line-height:1.75; margin-bottom:14px;">
+          Auf dieser Website werden ausschließlich folgende Kategorien personenbezogener Daten verarbeitet:
+        </p>
+
+        <div class="data-block">
+          <div class="data-block-title">1. Server-Logfiles (automatisch)</div>
+          <p>Bei jedem Seitenaufruf speichert GitHub Pages (unser Hosting-Anbieter) automatisch technische Informationen: IP-Adresse, Datum/Uhrzeit, aufgerufene URL, HTTP-Statuscode und Browser-Informationen. Diese Daten werden ausschließlich von GitHub Inc. verarbeitet.</p>
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Betrieb und Sicherheit)</p>
+          <p class="data-duration">Datenschutz GitHub: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener" style="color:var(--green);">github.com/privacy</a></p>
+        </div>
+
+        <div class="data-block">
+          <div class="data-block-title">2. Kontaktformulare (Broschürenanfrage &amp; Beratungstermin)</div>
+          <p>Wenn Sie eines der Formulare auf dieser Website absenden, werden die von Ihnen eingegebenen Daten (z. B. Vor- und Nachname, Unternehmen, Position, E-Mail-Adresse, Telefonnummer, gewähltes Thema, Ihre Nachricht sowie ein optionaler Wunschtermin) zur Zustellung an uns über den Dienst <strong>Web3Forms</strong> verarbeitet und an uns per E-Mail weitergeleitet. Dabei werden die Formulardaten an die Server des Anbieters übertragen (siehe Abschnitt „Drittanbieter &amp; Datenübermittlung"). Wir verwenden diese Daten ausschließlich zur Bearbeitung Ihrer Anfrage und zur Kontaktaufnahme.</p>
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Durchführung vorvertraglicher Maßnahmen) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Anfragenbearbeitung)</p>
+          <p class="data-duration">Speicherdauer: 24 Monate nach letztem Kontakt, sofern kein Vertragsverhältnis entsteht</p>
+        </div>
+
+        <div class="data-block">
+          <div class="data-block-title">3. Spracheinstellung</div>
+          <p>Ihre gewählte Sprache (DE/EN/CN) wird ausschließlich lokal in Ihrem Browser gespeichert (localStorage). Es werden keine Cookies gesetzt und keine Daten an unsere Server oder Dritte übertragen.</p>
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Benutzerfreundlichkeit)</p>
+        </div>
+      </div>
+
+      <!-- Cookies -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">🍪</div>
+          <div class="card-title">Cookies &amp; Reichweitenmessung</div>
+        </div>
+        <p style="font-size:.875rem; color:var(--muted); line-height:1.75;">
+          Diese Website nutzt <strong style="color:var(--blue);">Google Analytics 4</strong> zur Analyse der Websitenutzung. Dabei werden Cookies gesetzt – jedoch <strong style="color:var(--blue);">erst, nachdem Sie im Cookie-Banner ausdrücklich zugestimmt haben</strong> (Opt-in). Ohne Ihre Einwilligung werden keine Analyse-Cookies gesetzt und keine Daten an Google übertragen.
+        </p>
+        <div class="data-block" style="margin-top:14px;">
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) i. V. m. § 165 Abs. 3 TKG 2021</p>
+          <p class="data-duration">Ihre Einwilligung ist freiwillig und jederzeit mit Wirkung für die Zukunft widerrufbar: <a href="#" onclick="if(window.agatexOpenConsent)agatexOpenConsent();return false;" style="color:var(--green);font-weight:600;">Cookie-Einstellungen ändern</a></p>
+        </div>
+        <div class="info-note">
+          Zusätzlich messen wir die Reichweite anonym und <strong style="color:var(--blue);">cookielos</strong> mit <strong style="color:var(--blue);">Cloudflare Web Analytics</strong> – dabei werden keine Cookies gesetzt und keine personenbezogenen Profile gebildet. Ihre Spracheinstellung wird technisch notwendig lokal in Ihrem Browser gespeichert, nicht in einem Cookie.
+        </div>
+      </div>
+
+      <!-- Drittanbieter -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">🔗</div>
+          <div class="card-title">Drittanbieter &amp; Datenübermittlung</div>
+        </div>
+        <div class="data-block">
+          <div class="data-block-title">Google Analytics 4 (nur mit Einwilligung)</div>
+          <p>Anbieter: Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland (Mutterg. Google LLC, USA). Nach Ihrer Einwilligung erfasst Google Analytics pseudonymisierte Nutzungsdaten (u. a. gekürzte IP-Adresse, Seitenaufrufe, ungefährer Standort, Gerät/Browser, Verweisquelle) zur Auswertung der Websitenutzung. Die IP-Anonymisierung ist aktiviert. Eine Übermittlung in die USA ist möglich; Google ist über den EU-US Data Privacy Framework zertifiziert.</p>
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</p>
+          <p class="data-duration">Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--green);">policies.google.com/privacy</a></p>
+        </div>
+
+        <div class="data-block">
+          <div class="data-block-title">Cloudflare Web Analytics (cookielos)</div>
+          <p>Anbieter: Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA. Erfasst anonyme, aggregierte Nutzungsstatistiken (Seitenaufrufe, Verweisquelle, Land, Gerätetyp) <strong style="color:var(--blue);">ohne Cookies</strong> und ohne Bildung personenbezogener Profile.</p>
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an anonymer Reichweitenmessung)</p>
+          <p class="data-duration">Weitere Informationen: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" style="color:var(--green);">cloudflare.com/privacypolicy</a></p>
+        </div>
+
+
+        <div class="data-block">
+          <div class="data-block-title">Web3Forms (Formularzustellung)</div>
+          <p>Zur Verarbeitung und Zustellung von Formularanfragen nutzen wir den Dienst Web3Forms. Beim Absenden eines Formulars werden die eingegebenen Daten sowie Ihre IP-Adresse an die Server des Anbieters übermittelt und als E-Mail an uns weitergeleitet. Eine Übermittlung in Drittländer (u. a. USA) kann dabei nicht ausgeschlossen werden.</p>
+          <p class="data-basis">Rechtsgrundlage: Art. 6 Abs. 1 lit. b und lit. f DSGVO</p>
+          <p class="data-duration">Weitere Informationen: <a href="https://web3forms.com/privacy" target="_blank" rel="noopener" style="color:var(--green);">web3forms.com/privacy</a></p>
+        </div>
+
+        <div class="data-block">
+          <div class="data-block-title">Google Fonts</div>
+          <p>Diese Website lädt Schriftarten (Space Grotesk, Inter) von Google Fonts. Dabei wird Ihre IP-Adresse an Google LLC, USA, übermittelt. Google Fonts ist über den EU-US Data Privacy Framework zertifiziert.</p>
+          <p class="data-duration">Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--green);">policies.google.com/privacy</a></p>
+        </div>
+
+        <div class="data-block" style="margin-bottom:0;">
+          <div class="data-block-title">Font Awesome (Icons)</div>
+          <p>Icons werden von cdnjs.cloudflare.com geladen. Dabei wird Ihre IP-Adresse an Cloudflare Inc., USA, übermittelt.</p>
+          <p class="data-duration">Weitere Informationen: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" style="color:var(--green);">cloudflare.com/privacypolicy</a></p>
+        </div>
+      </div>
+
+      <!-- Ihre Rechte -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">🛡️</div>
+          <div class="card-title">Ihre Rechte als betroffene Person (Art. 15–22 DSGVO)</div>
+        </div>
+        <p style="font-size:.875rem; color:var(--muted); line-height:1.75; margin-bottom:16px;">Sie haben jederzeit das Recht auf:</p>
+
+        <div class="right-item">
+          <div class="right-title">Auskunft (Art. 15 DSGVO)</div>
+          <div class="right-desc">Bestätigung, ob und welche personenbezogenen Daten wir von Ihnen verarbeiten.</div>
+        </div>
+        <div class="right-item">
+          <div class="right-title">Berichtigung (Art. 16 DSGVO)</div>
+          <div class="right-desc">Berichtigung unrichtiger oder Vervollständigung unvollständiger Daten.</div>
+        </div>
+        <div class="right-item">
+          <div class="right-title">Löschung (Art. 17 DSGVO)</div>
+          <div class="right-desc">Löschung Ihrer Daten, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</div>
+        </div>
+        <div class="right-item">
+          <div class="right-title">Einschränkung (Art. 18 DSGVO)</div>
+          <div class="right-desc">Einschränkung der Verarbeitung unter bestimmten Voraussetzungen.</div>
+        </div>
+        <div class="right-item">
+          <div class="right-title">Datenübertragbarkeit (Art. 20 DSGVO)</div>
+          <div class="right-desc">Erhalt Ihrer bereitgestellten Daten in einem strukturierten, gängigen und maschinenlesbaren Format.</div>
+        </div>
+        <div class="right-item">
+          <div class="right-title">Widerspruch (Art. 21 DSGVO)</div>
+          <div class="right-desc">Widerspruch gegen die Verarbeitung Ihrer Daten auf Grundlage berechtigter Interessen.</div>
+        </div>
+        <div class="right-item">
+          <div class="right-title">Beschwerderecht bei der Aufsichtsbehörde (Art. 77 DSGVO)</div>
+          <div class="right-desc">
+            <a href="https://www.dsb.gv.at" target="_blank" rel="noopener" style="color:var(--green);">Österreichische Datenschutzbehörde (dsb.gv.at)</a>
+            , Barichgasse 40–42, 1030 Wien
+          </div>
+        </div>
+      </div>
+
+      <!-- Datensicherheit -->
+      <div class="card prose">
+        <div class="card-header">
+          <div class="card-icon">🔒</div>
+          <div class="card-title">Datensicherheit</div>
+        </div>
+        <p>Diese Website wird über eine verschlüsselte HTTPS-Verbindung ausgeliefert (TLS/SSL). Wir treffen technische und organisatorische Maßnahmen, um Ihre Daten gegen unbefugten Zugriff, Verlust oder Manipulation zu schützen.</p>
+      </div>
+
+      <!-- Kontakt -->
+      <div class="cta-box">
+        <div class="cta-icon">✉️</div>
+        <div>
+          <div class="cta-title">Datenschutzanfragen</div>
+          <p class="cta-text">Für Anfragen zu Ihren Datenschutzrechten oder zur Datenverarbeitung wenden Sie sich bitte an:</p>
+          <a href="mailto:office@agatex.at" class="cta-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            office@agatex.at
+          </a>
+          <p class="cta-addr">AGATEX Feinchemie GmbH · Aichham 11, A–4650 Lambach/Edt · Tel: +43 (7245) 32341-0</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <p>© 2026 AGATEX Feinchemie GmbH · Alle Rechte vorbehalten</p>
+    <div class="footer-links">
+      <a href="datenschutz.html" class="active">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
