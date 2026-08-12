@@ -13,7 +13,7 @@
 (function () {
   "use strict";
 
-  var GA_MEASUREMENT_ID = "";   // AGATEX Cleaning Solutions
+  var GA_MEASUREMENT_ID = "";   // AGATEX Kältemittel
   var CF_BEACON_TOKEN   = "";   // ← optional, z. B. "0123ab...": leer = Auto-Setup im CF-Dashboard
 
   /* ───────────────────────────  ab hier nichts ändern  ─────────────────── */
